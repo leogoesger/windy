@@ -46,6 +46,7 @@ const SimpleMap = function () {
 
   const reset = () => {
     setLatLng();
+    setError(false);
     setLoading(false);
   };
 
