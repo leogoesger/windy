@@ -24,7 +24,9 @@ const SimpleMap = function () {
     if (latLng?.length === 2) {
       setError(false);
       setLoading(true);
-      fetch(`http://localhost:4000/v1/${latLng[0]},${latLng[1]}/${hours}`)
+      fetch(
+        `https://arcane-ravine-24877.herokuapp.com/v1/${latLng[0]},${latLng[1]}/${hours}`
+      )
         .then((response) => {
           if (response.status === 400) {
             throw new Error("your error message here");
