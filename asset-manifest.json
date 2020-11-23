@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/windy/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/windy/static/js/main.b34e9144.chunk.js",
-    "main.js.map": "/windy/static/js/main.b34e9144.chunk.js.map",
+    "main.js": "/windy/static/js/main.03aebd64.chunk.js",
+    "main.js.map": "/windy/static/js/main.03aebd64.chunk.js.map",
     "runtime-main.js": "/windy/static/js/runtime-main.b4904cf4.js",
     "runtime-main.js.map": "/windy/static/js/runtime-main.b4904cf4.js.map",
     "static/js/2.124d2b46.chunk.js": "/windy/static/js/2.124d2b46.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b4904cf4.js",
     "static/js/2.124d2b46.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.b34e9144.chunk.js"
+    "static/js/main.03aebd64.chunk.js"
   ]
 }
