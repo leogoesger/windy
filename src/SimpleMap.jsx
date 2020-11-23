@@ -10,11 +10,15 @@ import {
 } from "@material-ui/core";
 
 const AnyReactComponent = ({ text }) => (
-  <MdLocationOn size={42} style={{ color: "purple" }} />
+  <MdLocationOn
+    size={42}
+    style={{ color: "purple", margin: "-42px 0px 0px -21px" }}
+  />
 );
 
 const SimpleMap = function () {
   const [latLng, setLatLng] = useState();
+  const [latLngPrev, setLatLngPrev] = useState();
   const [hours, setHours] = useState(10);
   const [response, setResponse] = useState();
   const [loading, setLoading] = useState(false);
@@ -136,12 +140,13 @@ const SimpleMap = function () {
           defaultZoom={11}
           onClick={(d) => {
             setLatLng([d.lat, d.lng]);
+            setLatLngPrev([d.lat, d.lng]);
           }}
         >
-          {latLng?.length === 2 && (
+          {latLngPrev?.length === 2 && (
             <AnyReactComponent
-              lat={latLng[0]}
-              lng={latLng[1]}
+              lat={latLngPrev[0]}
+              lng={latLngPrev[1]}
               text="My Marker"
             />
           )}
