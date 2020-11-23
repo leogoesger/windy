@@ -55,8 +55,7 @@ const SimpleMap = function () {
       <Dialog open={!!latLng} onClose={reset} fullScreen>
         <IconButton
           onClick={reset}
-          size="small"
-          style={{ position: "absolute", right: 0, top: 0 }}
+          style={{ position: "absolute", right: 0, top: 0, zIndex: 100 }}
         >
           <MdCancel size={40} style={{ color: "red" }} />
         </IconButton>
