@@ -22,11 +22,11 @@ function App() {
       <Dialog open={open}>
         <DialogContent>
           {!isReady ? (
-            "This server shut itself down due to inactivity, and it is rebooting now. Give it a few seconds and try it again."
+            "The server shut itself down due to inactivity, and it is rebooting now. Give it a few seconds and try it again."
           ) : (
             <div>
-              🎉 Server is ready! Click on the map to get wind detail on that
-              location.{" "}
+              🎉 Click on the map to get aggragated wind forecast at that
+              location.
               <ul>
                 <li>Data is from NOAA forecast, NOT history data</li>
                 <li>You can change hour window</li>
